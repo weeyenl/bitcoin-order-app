@@ -1,12 +1,19 @@
-FROM node:alpine as builder
+FROM node:12.2.0 as builder
 
 WORKDIR '/app'
 
-COPY package.json ./
-RUN npm install
-COPY ./ ./
-RUN npm run build
+COPY package.json .
 
-FROM nginx
+ENV PATH /app/node_modules/.bin:$PATH
+
+RUN npm install -g @angular/cli -y
+RUN npm install -y
+
+COPY . .
+
+RUN ng build --prod
+
+FROM nginx:latest
+
 EXPOSE 80
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/dist/bitcoin /usr/share/nginx/html
