@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1596078205913,
+  "timestamp": 1596080918344,
   "index": "https://weeyenl.github.io/bitcoin-order-app/index.html",
   "assetGroups": [
     {
@@ -10,12 +10,12 @@
       "urls": [
         "https://weeyenl.github.io/bitcoin-order-app/favicon.ico",
         "https://weeyenl.github.io/bitcoin-order-app/index.html",
-        "https://weeyenl.github.io/bitcoin-order-app/main.15fdab22add068c609b4.js",
+        "https://weeyenl.github.io/bitcoin-order-app/main.59c3d02c29c1c0f5eb81.js",
         "https://weeyenl.github.io/bitcoin-order-app/manifest.webmanifest",
-        "https://weeyenl.github.io/bitcoin-order-app/polyfills-es5.d6dbe74bff0d24406d5b.js",
-        "https://weeyenl.github.io/bitcoin-order-app/polyfills.00e0ac70c7a61a994d40.js",
-        "https://weeyenl.github.io/bitcoin-order-app/runtime.69aad174de386c36a16c.js",
-        "https://weeyenl.github.io/bitcoin-order-app/styles.cd5cd5bb33d5d36675b8.css"
+        "https://weeyenl.github.io/bitcoin-order-app/polyfills-es5.9984b73de88ed3be419b.js",
+        "https://weeyenl.github.io/bitcoin-order-app/polyfills.32032eb97db9086b35ca.js",
+        "https://weeyenl.github.io/bitcoin-order-app/runtime.458556a34b891ea32398.js",
+        "https://weeyenl.github.io/bitcoin-order-app/styles.d31fa9f27b2ed9b64e4e.css"
       ],
       "patterns": []
     },
@@ -65,13 +65,13 @@
     "https://weeyenl.github.io/bitcoin-order-app/assets/pixel.gif": "87bb3a5dcd68684dee2e401dc8ed016eb6bea75f",
     "https://weeyenl.github.io/bitcoin-order-app/back6.b820a7afbeaf4e4c5246.jpg": "bb1d88aec46a62d77cf358868f406f68399e7b8f",
     "https://weeyenl.github.io/bitcoin-order-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://weeyenl.github.io/bitcoin-order-app/index.html": "ab39c367f2fb9604b3b44c61cc9afc3187c849d9",
-    "https://weeyenl.github.io/bitcoin-order-app/main.15fdab22add068c609b4.js": "5ca97ef23bebc374df3488f42d4e8df97ed24a35",
+    "https://weeyenl.github.io/bitcoin-order-app/index.html": "c2be20741acc839246884992ddad266a48f0cb94",
+    "https://weeyenl.github.io/bitcoin-order-app/main.59c3d02c29c1c0f5eb81.js": "f2ddda082ba9e3816d770bb4db38e5efc4452816",
     "https://weeyenl.github.io/bitcoin-order-app/manifest.webmanifest": "da1eee6ec517d6398dc60e53058e5fec8304e10f",
-    "https://weeyenl.github.io/bitcoin-order-app/polyfills-es5.d6dbe74bff0d24406d5b.js": "9d8470a6053852e77ee43b505664317f721b13ae",
-    "https://weeyenl.github.io/bitcoin-order-app/polyfills.00e0ac70c7a61a994d40.js": "e68240c3b4dc50491b1b65d39a7791c1572712a0",
-    "https://weeyenl.github.io/bitcoin-order-app/runtime.69aad174de386c36a16c.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://weeyenl.github.io/bitcoin-order-app/styles.cd5cd5bb33d5d36675b8.css": "26453d47ec36430b523ace93361172ee2488aa30"
+    "https://weeyenl.github.io/bitcoin-order-app/polyfills-es5.9984b73de88ed3be419b.js": "5df6f55804f28bac9ea459f02610eecd76984e94",
+    "https://weeyenl.github.io/bitcoin-order-app/polyfills.32032eb97db9086b35ca.js": "3e8f2ae52e6ec6d6ea042c79b5df6743c7394367",
+    "https://weeyenl.github.io/bitcoin-order-app/runtime.458556a34b891ea32398.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://weeyenl.github.io/bitcoin-order-app/styles.d31fa9f27b2ed9b64e4e.css": "1767fb8e20a7f8d4475c064415c3da4e47a8704f"
   },
   "navigationUrls": [
     {
