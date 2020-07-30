@@ -5,6 +5,12 @@ node_js:
 dist: bionic
 sudo: required
 
+services:
+  - docker
+
+before_install:
+  - docker build -t weeyenl/bitcoin-app .
+
 notifications:
   email:
     recipients:
@@ -18,8 +24,23 @@ before_script:
   - npm install -g @angular/cli
   
 script:
+  - ng lint
+  - npm audit fix
+  - npm update
+  - npm i @angular-devkit/build-angular@0.803.24
   - ng build --prod --base-href https://weeyenl.github.io/bitcoin-order-app/
   
+after_success:
+  - docker build -t weeyenl/bitcoin-app .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push weeyenl/bitcoin-app
+  - pip install --user awscli # install aws cli w/o sudo
+  - export PATH=$PATH:$HOME/.local/bin # put aws in the path
+  - eval $(aws ecr get-login --no-include-email --region ap-southeast-2) #needs AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY envvars
+  - docker tag weeyenl/bitcoin-app 869041221584.dkr.ecr.ap-southeast-2.amazonaws.com/wy_ecr
+  - docker push 869041221584.dkr.ecr.ap-southeast-2.amazonaws.com/wy_ecr
+  - git push https://github.com/weeyenl/bitcoin-order-app.git :feature
+
 deploy:
   provider: pages
   skip_cleanup: true
